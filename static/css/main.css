@@ -1,5 +1,6 @@
 
 body {
+    background-image: url('/static/img/image.png');
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #333;
@@ -25,29 +26,36 @@ h1 {
 }
 
 
-table {
-    width: 100%;
-    border-collapse:separate;
-    margin-bottom: 20px;
+
+    @media (min-width: 700px){
+        table {
+            width: 100%;
+            border-collapse:separate;
+            margin-bottom: 20px;
+        
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    
+    
+    input[type="text"] {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    form {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-form {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-input[type="text"] {
-    flex-grow: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
 
